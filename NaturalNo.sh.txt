@@ -1,0 +1,10 @@
+echo "Enter Size(N)"
+read N
+sum=0
+echo "Enter Numbers"
+for((i=0;i<N;i++))
+do
+read num
+sum=$((sum + num))
+done
+echo $sum
