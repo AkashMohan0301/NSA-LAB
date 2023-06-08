@@ -1,0 +1,16 @@
+echo "Enter the number :"
+read no
+rev=0
+temp=$no
+while [ $no -ne 0 ]
+do
+dig=$(( $no%10 ))
+rev=$(( $rev+$dig*$dig*$dig ))
+no=$(( $no/10 ))
+done
+if [ $rev -eq $temp ]
+then
+echo "Armstrong"
+else
+echo "Not Armstrong"
+fi
