@@ -1,0 +1,10 @@
+echo "Enter First Number"
+read a
+echo "Enter Second number"
+read b
+if ((a==b))
+then
+echo "Numbers are equal"
+else
+echo"Numbers are not eqaul"
+fi
